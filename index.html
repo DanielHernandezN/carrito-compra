@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carro de Compra</title>
+</head>
+<body>
+    <header>
+        <h1>Carro de Compra</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Productos</h2>
+            <div>
+                <ul>
+                    <li>Producto 1 - $10.00
+                        <button class="agregar" data-nombre="Producto 1" data-precio="10">agregar</button>
+                    </li>
+                    <li>Producto 2 - $20.00
+                        <button class="agregar" data-nombre="Producto 2" data-precio="20">agregar</button>
+                    </li>
+                    <li>Producto 3 - $30.00
+                        <button class="agregar" data-nombre="Producto 3" data-precio="30">agregar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p>Total: $<span id="carrito-total">0</span></p>
+            <button id="comprar-btn">Comprar</button>
+            <p id="mensaje-compra"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
